@@ -1,0 +1,208 @@
+/* styles.css */
+
+/* Reset default padding, margin, and box-sizing */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Container for customization options */
+.customizer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Container for color swatches */
+.color-swatches {
+    margin-bottom: 20px;
+}
+
+/* Color switch buttons */
+.switch {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Pink color class */
+.pink {
+    background-color: pink;
+}
+
+/* Blue color class */
+.blue {
+    background-color: blue;
+}
+
+/* Yellow color class */
+.yellow {
+    background-color: yellow;
+}
+
+/* Container for umbrella preview */
+.umbrella-preview {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+}
+
+/* Styling for logo upload input */
+#logo-upload {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Styling for logo preview */
+.logo-preview {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+/* Flex container for layout */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Styling for umbrella image section */
+.umbrella-image-section {
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Styling for umbrella custom section */
+.umbrella-custom-section {
+    flex: 50%;
+}
+
+/* Styling for umbrella image */
+#umbrella-image {
+    height: 440px;
+}
+
+/* Styling for custom umbrella text */
+.custom-umbrella-text {
+    font-size: 62px;
+    margin-bottom: 15px;
+}
+
+/* Styling for upload button */
+.upload-btn {
+    display: flex;
+    flex-direction: row;
+    width: 420px;
+    background-color: blue;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Styling for upload logo text */
+.upload-logo {
+    display: flex;
+    flex: 60%;
+    font-size: 22px;
+    color: white;
+}
+
+/* Styling for upload icon */
+.upload-icon {
+    display: flex;
+    flex: 40%;
+    height: 30px;
+    justify-content: left;
+}
+
+/* Styling for custom text */
+.custom-text {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* Styling for upload text */
+.upload-text {
+    font-size: 20px;
+}
+
+/* Initially hide the uploaded image */
+.upload-image-view {
+    visibility: hidden;
+}
+
+/* Disable button styling */
+button.disabled {
+    pointer-events: none;
+    opacity: 0.5; /* Optionally reduce opacity to visually indicate it's disabled */
+}
+
+/* Styling for loader container */
+.umbrella-image-section .loader-container {
+    display: none; /* Initially hide the loader */
+    position: fixed;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+/* Styling for loader animation */
+.umbrella-image-section .loader {
+    animation: spin 2s linear infinite;
+}
+
+/* Styling for icon loader */
+.icon-loader {
+    width: 200px; /* Adjust the width to your desired size */
+    height: 50px; /* Adjust the height to your desired size */
+}
+
+/* Keyframes for loader animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Styling to display content */
+.content {
+    display: block;
+}
+
+/* Styling to hide content */
+.hide {
+    display: none;
+}
+
+/* Styling to make element visible */
+.element-to-show {
+    visibility: visible;
+}
+
+/* Styling to make element hidden */
+.element-to-hide {
+    visibility: hidden;
+}
+
+/* Styling for loader icon */
+.loader-icon {
+    height: 100px;
+    width: 100px;
+}
+
+/* Styling for hidden loader */
+#hidden-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}

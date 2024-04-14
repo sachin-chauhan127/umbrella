@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Customizer</title>
+    <link rel="stylesheet" href="./styles/umbrella.css">
+</head>
+<body>
+    <div class="container">
+        <div class="umbrella-image-section">
+            <div class="loader-container" id="loaderContainer">
+                <div class="loader">
+                    <img class="loader-icon" src="./icons/loader_icon.svg" alt="Image">
+                </div>
+            </div>
+            <div class="content" id="content">
+                <img id="umbrella-image" src="images/pink-umbrella.png" alt="Umbrella Preview">
+            </div>
+            <img id="uploaded-image" class="upload-image-view" src="" alt="Uploaded Image">
+        </div>
+        <div class="umbrella-custom-section">
+            <div>
+                <p class="custom-umbrella-text">Custom Umbrella</p>
+                <div class="color-swatches">
+                    <button class="switch disabled"></button>
+                    <button class="switch disabled"></button>
+                    <button class="switch disabled"></button>
+                    <button class="switch pink"></button>
+                    <button class="switch blue"></button>
+                    <button class="switch yellow"></button>
+                    <button class="switch disabled"></button>
+                    <button class="switch disabled"></button>
+                </div>
+                <p class="custom-text">Customize your umbrella</p>
+                <p class="upload-text">Upload a logo for an instant preview.</p>
+                <p class="upload-text">.png and .jpg files only. Max file size is 5MB.</p>
+                <div id="custom-upload-btn" class="upload-btn">
+                    <div class="upload-icon"><img src="images/upload_icon.svg"/></div>
+                    <p class="upload-logo">UPLOAD LOGO</p>
+                    <div class="upload-loader" id="hidden-loader">
+                        <div class="loader">
+                            <img class="upload-loader-icon" src="./icons/loader_icon.svg" alt="Image">
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/umbrella.js"></script>
+</body>
+</html>
